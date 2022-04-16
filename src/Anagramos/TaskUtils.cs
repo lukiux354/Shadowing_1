@@ -76,12 +76,19 @@ namespace Anagramos
             {
                 calculatedID = calculatedID * primes[letter.ToString()];
             }
-            //Console.WriteLine(word);
-            //if(calculatedID < 0)
-            //{
-            //    Console.WriteLine(word);
-            //}
             return calculatedID;
+        }
+        public static LithuanianWordsContainer FindAllAnagrams(Dictionary<string, int> dictionaryOfPrimes, string searchedWord, LithuanianWordsContainer allLithuanianWords)
+        {
+            LithuanianWordsContainer AllAnagrams = new LithuanianWordsContainer();
+            for (int i = 0; i < allLithuanianWords.Count; i++)
+            {
+                if (TaskUtils.CalculateIDsByAssignedPrimes(dictionaryOfPrimes, searchedWord) == allLithuanianWords.Get(i).WordIDByPrimeNumbers && allLithuanianWords.Get(i).Word != searchedWord)
+                {
+                    AllAnagrams.Add(allLithuanianWords.Get(i));
+                }
+            }
+            return AllAnagrams;
         }
     }
 }

@@ -1,0 +1,7 @@
+C:\Users\lukso\Desktop\TransUnion Shadowing Task\src\Anagramos\obj\Debug\Anagramos.csprojAssemblyReference.cache
+C:\Users\lukso\Desktop\TransUnion Shadowing Task\src\Anagramos\obj\Debug\Anagramos.csproj.CoreCompileInputs.cache
+C:\Users\lukso\Desktop\TransUnion Shadowing Task\src\Anagramos\bin\Debug\Anagramos.exe.config
+C:\Users\lukso\Desktop\TransUnion Shadowing Task\src\Anagramos\bin\Debug\Anagramos.exe
+C:\Users\lukso\Desktop\TransUnion Shadowing Task\src\Anagramos\bin\Debug\Anagramos.pdb
+C:\Users\lukso\Desktop\TransUnion Shadowing Task\src\Anagramos\obj\Debug\Anagramos.exe
+C:\Users\lukso\Desktop\TransUnion Shadowing Task\src\Anagramos\obj\Debug\Anagramos.pdb

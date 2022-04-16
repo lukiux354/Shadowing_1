@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
 
 namespace Anagramos
 {
@@ -89,6 +90,15 @@ namespace Anagramos
                 }
             }
             return AllAnagrams;
+        }
+        public static bool WordIsValid(string word)
+        {
+            int MinAnagramInputLength = int.Parse(ConfigurationManager.AppSettings.Get("MinAnagramInputLength"));
+            if (word.Length >= MinAnagramInputLength)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

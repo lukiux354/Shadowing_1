@@ -1,5 +1,7 @@
 ﻿using System.IO;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Collections.Specialized;
 
 namespace Anagramos
 {
@@ -23,9 +25,11 @@ namespace Anagramos
         }
         public static void OutputAllAnagrams(LithuanianWordsContainer anagrams)
         {
+            int maxGeneratedAnagrams = int.Parse(ConfigurationManager.AppSettings.Get("MaxGeneratedAnagrams"));
             bool noneFound = true;
+
             System.Console.WriteLine("\nĮvesto žodžio anagrama / anagramos : ");
-            for (int i = 0; i < anagrams.Count; i++)
+            for (int i = 0; i < anagrams.Count && maxGeneratedAnagrams > i; i++)
             {
                 System.Console.WriteLine(anagrams.Get(i).Word);
                 noneFound = false;

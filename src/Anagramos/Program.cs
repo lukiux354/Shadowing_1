@@ -28,6 +28,18 @@ namespace Anagramos
             {
                 Console.WriteLine("Jūsų įvestas žodis yra per trumpas. Mažiausias leistinas žodžio ilgis : {0}", int.Parse(ConfigurationManager.AppSettings.Get("MinAnagramInputLength")));
             }
+
+            //// Išveda žodžius, kurie overflowina.
+            //int tempOverflowCount = 0;
+            //for(int i = 0; i < AllLithuanianWords.Count; i++)
+            //{
+            //    if (AllLithuanianWords.Get(i).WordIDByPrimeNumbers < 0)
+            //    {
+            //        Console.WriteLine(AllLithuanianWords.Get(i).Word);
+            //        tempOverflowCount++;
+            //    }
+            //}
+            //Console.WriteLine(tempOverflowCount);
         }
     }
 }
